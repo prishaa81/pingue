@@ -2,8 +2,6 @@
 
 > Multi-user web app and Telegram bot where users manage recurring bills (28-day recharges, electricity, gas, maintenance, subscriptions), get timely reminders before each due date, and log payments in under 20 seconds using text, pasted SMS, or screenshot receipts.
 
-Built based on the [PRD specifications](./Bill%20Reminder%20System%20%E2%80%94%20PRD.pdf).
-
 ---
 
 ## ✨ Features
@@ -17,43 +15,4 @@ Built based on the [PRD specifications](./Bill%20Reminder%20System%20%E2%80%94%2
 - **Payment History & Export**: Search, filter, and 1-click export to CSV / Excel for bills and payments.
 - **Privacy & Security First**: Supabase Row-Level Security (RLS) guarantees users only view their own data. Screenshots are parsed in-memory and discarded without storing bank account or card numbers.
 
----
 
-## 🚀 Getting Started
-
-### 1. Install Dependencies
-```bash
-npm install
-```
-
-### 2. Environment Setup
-Copy the example environment configuration:
-```bash
-cp .env.example .env.local
-```
-
-Configure your secrets:
-- `NEXT_PUBLIC_SUPABASE_URL`: Supabase project URL
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Supabase anon key
-- `SUPABASE_SERVICE_ROLE_KEY`: Supabase service role key (for webhook & cron)
-- `GEMINI_API_KEY`: Google Gemini API key
-- `TELEGRAM_BOT_TOKEN`: Token from [@BotFather](https://t.me/BotFather)
-- `TELEGRAM_WEBHOOK_SECRET`: Custom secret token for webhook verification
-- `CRON_SECRET`: Random secret string for cron authentication
-
-*(Note: The application includes a preloaded demo mode with offline local state for Prisha and Vritti, so it runs immediately out of the box even before plugging in API keys).*
-
-### 3. Database Migration
-In your Supabase project's SQL editor, execute [`supabase/schema.sql`](./supabase/schema.sql) to create the tables, indexes, automatic profile trigger, and Row-Level Security (RLS) policies.
-
-### 4. Run Development Server
-```bash
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### 5. Production Build
-```bash
-npm run build
-npm start
-```
