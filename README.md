@@ -1,4 +1,4 @@
-# RemindLoop — Smart Bill & Recharge Reminder System (v2)
+# Pingue — Smart Bill & Recharge Reminder System
 
 > Multi-user web app and Telegram bot where users manage recurring bills (28-day recharges, electricity, gas, maintenance, subscriptions), get timely reminders before each due date, and log payments in under 20 seconds using text, pasted SMS, or screenshot receipts.
 
@@ -8,7 +8,7 @@ Built based on the [PRD specifications](./Bill%20Reminder%20System%20%E2%80%94%2
 
 ## ✨ Features
 
-- **Aurora Glass Bento UI**: Gen Z-friendly design with deep navy background (`#0B1026`), soft blurred gradient glows, frosted glass cards, and status colors (Mint for Paid, Amber for Due Soon, Coral for Overdue).
+- **Monochrome Glass Bento UI**: Ultra-clean minimalist dark design with frosted glass cards, subtle borders, and clear status chips (Green for Paid, Amber for Due Soon & Today, Red for Overdue).
 - **Fast 1-Tap Payment Logging**: Tap "Paid" on any bill card to confirm prefilled amounts, advance the next due date automatically, trigger checkmark celebrations, and offer an instant "Undo" toast.
 - **AI Bill Parsing**: Powered by Google Gemini 2.0 with a fallback heuristic parser for Indian telecom/utility SMS & receipts.
 - **Telegram Bot Webhook**: Connect your personal Telegram chat via single-use expiring codes (`/start CODE`). Get reminders with inline `[Paid]`, `[Snooze 1d]`, and `[Ignore]` buttons.
